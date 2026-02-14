@@ -6,6 +6,7 @@
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
     "check": "biome check",
+    "clear": "node scripts/clear.js",
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
