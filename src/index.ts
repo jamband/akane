@@ -1,9 +1,14 @@
 import { Hono } from "hono";
 
-const app = new Hono();
+type Bindings = {
+  FOO_BAR: string;
+};
+
+const app = new Hono<{ Bindings: Bindings }>();
 
 app.get("/", (c) => {
-  return c.text("akane");
+  const FOO_BAR = c.env.FOO_BAR;
+  return c.text(FOO_BAR);
 });
 
 export default app;
