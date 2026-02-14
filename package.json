@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "check": "biome check",
+    "clean": "node scripts/clean.js"
+  },
+  "dependencies": {
+    "hono": "4.11.9"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.15",
+    "@types/node": "22.19.11",
+    "wrangler": "4.65.0"
+  }
+}
