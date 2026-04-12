@@ -10,12 +10,12 @@
     "clean": "node scripts/clean.js"
   },
   "dependencies": {
-    "hono": "4.12.8"
+    "hono": "4.12.12"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.8",
-    "@types/node": "24.12.0",
-    "vitest": "4.1.0",
-    "wrangler": "4.75.0"
+    "@biomejs/biome": "2.4.11",
+    "@types/node": "24.12.2",
+    "vitest": "4.1.4",
+    "wrangler": "4.81.1"
   }
 }
